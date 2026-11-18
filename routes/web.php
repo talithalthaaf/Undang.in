@@ -1,9 +1,15 @@
+<?php
+
 use App\Http\Controllers\WeddingController;
 use Illuminate\Support\Facades\Route;
 
+Route::get('/', function () {
+    return view('welcome');
+});
+
 Route::middleware(['auth'])->group(function () {
     Route::get('/wedding/edit', [WeddingController::class, 'edit'])->name('wedding.edit');
-    
+
     Route::post('/wedding/couple', [WeddingController::class, 'updateCouple'])->name('wedding.update.couple');
     Route::post('/wedding/event', [WeddingController::class, 'updateEvent'])->name('wedding.update.event');
     Route::post('/wedding/notes', [WeddingController::class, 'updateNotes'])->name('wedding.update.notes');
