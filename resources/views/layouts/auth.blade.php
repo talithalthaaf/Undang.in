@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
-        //warna utama Undang.in
+        /* warna utama Undang.in */
 
         :root {
             --savory-sage: #818263;
@@ -27,7 +27,7 @@
             --coconut-cream: #FFFAF2;
         }
 
-      //dasar halaman login dan register
+      /* dasar halaman login dan register */
         * {
             box-sizing: border-box;
         }
@@ -50,7 +50,7 @@
             position: relative;
         }
 
-        //tombol back to website
+        /* tombol back to website */
         .auth-back-link {
             position: absolute;
             top: 32px;
@@ -69,7 +69,7 @@
             color: var(--blush-beet);
         }
 
-       //card utama login dan register
+       /* card utama login dan register */
 
         .auth-card {
             width: 100%;
@@ -81,7 +81,7 @@
             padding: 52px 66px;
         }
     
-        //tulisan Undang.in di halaman login dan register
+        /* tulisan Undang.in di halaman login dan register */
         .auth-logo {
             text-align: center;
 
@@ -92,7 +92,7 @@
             margin: 0 0 4px;
         }
 
-       //sub judul login dan register
+       /* sub judul login dan register */
 
         .auth-subtitle {
             text-align: center;
@@ -104,14 +104,14 @@
             margin-bottom: 38px;
         }
 
-       //area formulir
+       /* area formulir */
         .auth-content {
             width: 100%;
             max-width: 545px;
             margin: 0 auto;
         }
 
-        //antarmuka yang responsif
+        /* antarmuka yang responsif */
         @media (max-width: 600px) {
             .auth-page {
                 padding: 80px 16px 24px;

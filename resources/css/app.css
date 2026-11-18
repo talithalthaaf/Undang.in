@@ -9,3 +9,125 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+
+.field {
+    margin-bottom: 22px;
+}
+
+.field-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #818263;
+}
+
+.field-req {
+    color: #c66b5c;
+}
+
+.field-input {
+    width: 100%;
+    padding: 13px 16px;
+    border: 1px solid #c2c395;
+    border-radius: 10px;
+    background-color: #fffaF2;
+    color: #818263;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.field-input:focus {
+    border-color: #818263;
+    box-shadow: 0 0 0 3px rgba(129, 130, 99, 0.12);
+}
+
+.field-input::placeholder {
+    color: #aaa991;
+}
+
+.field-input.is-invalid {
+    border-color: #c66b5c;
+}
+
+.field-error {
+    color: #c66b5c;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.field-wrap {
+    position: relative;
+}
+
+.field-wrap .field-input {
+    padding-right: 48px;
+}
+
+.toggle-pass {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    color: #818263;
+    cursor: pointer;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    background-color: #818263;
+    color: #fffaF2;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #6e7054;
+}
+
+.alert-error {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #f8e2dc;
+    color: #a64f42;
+    font-size: 13px;
+}
+
+.alert-error button {
+    border: none;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+
+.auth-footer {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 24px;
+}
+
+.auth-footer a {
+    color: #818263;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    color: #c28b7b;
+}
