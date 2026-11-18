@@ -10,6 +10,10 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
+    public function wedding()
+{
+    return $this->hasOne(Wedding::class);
+}
     /** @use HasFactory<UserFactory> */
     use HasFactory, Notifiable;
 
